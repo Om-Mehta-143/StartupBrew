@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0A192F; /* Navy */
+  --color-secondary: #8892B0; /* Slate */
+  --color-accent: #FACC15; /* Gold/yellow for high contrast CTA */
+}
+
+body {
+  background-color: var(--color-primary);
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
