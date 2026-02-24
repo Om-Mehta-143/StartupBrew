@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Process from './components/Process';
 import Footer from './components/Footer';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <main className="flex-1">
         <Hero />
-        {/* Future sections (Process, Testimonials, etc.) will go here */}
+        <Process />
       </main>
       <Footer />
     </div>
