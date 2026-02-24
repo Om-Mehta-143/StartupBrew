@@ -1,16 +1,19 @@
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white">
-          Startup<span className="text-accent">Brew</span>
-        </h1>
-        <p className="text-secondary text-lg md:text-xl">
-          Foundation setup complete.
-        </p>
-      </div>
+    <div className="flex min-h-screen flex-col bg-[#0A192F] font-sans text-white">
+      <Header />
+      <main className="flex-1">
+        <Hero />
+        {/* Future sections (Process, Testimonials, etc.) will go here */}
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
