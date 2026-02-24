@@ -1,20 +1,19 @@
 # STATE.md
 
-> **Status**: In Progress
+> **Status**: Idle
 
 ## Current Position
-- **Phase**: 4 (completed)
-- **Task**: All tasks complete
-- **Status**: Verified
+- **Milestone**: v1.0 (completed and archived)
+- **Phase**: None active
+- **Task**: Waiting for new planning
 
 ## Last Session Summary
-Phase 4 (Polish & Launch) executed successfully. 1 plan, 2 tasks completed. The Testimonials placeholders are live and index.html is optimized for SEO.
+Milestone v1.0 was fully completed, resulting in a live, responsive StartupBrew landing page. All phases have been archived to `.gsd/milestones/v1.0/`.
 
 ## Next Steps
-1. The v1.0 Milestone is complete! All phases have been planned and executed.
-2. Ready for final review or `/complete-milestone`.
+1. Determine the next major goal.
+2. Run `/new-milestone` to start mapping out the next phase of work (e.g., Lead Capture Backend, Dashboard, etc.).
 
 ## Key Context
-- Brand new landing page project for StartupBrew.
-- Focus is on professional appearance and lead capture.
-- Framework is currently secret, pitched abstractly but effectively.
+- StartupBrew public landing page is built.
+- Current constraints involved keeping the framework secret and optimizing for direct outreach.
