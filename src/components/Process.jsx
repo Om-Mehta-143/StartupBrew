@@ -35,7 +35,7 @@ const Process = () => {
     ];
 
     return (
-        <section id="process" className="py-24 bg-[#0A192F] border-t border-white/5 relative overflow-hidden">
+        <section id="process" className="py-24 bg-[#0A192F] border-t border-white/5 relative overflow-hidden scroll-mt-20">
             {/* Decorative background grid */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -54,18 +54,23 @@ const Process = () => {
                     {/* Connecting line for desktop */}
                     <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-white/10 -z-10"></div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {steps.map((step, index) => (
-                            <div key={index} className="relative group">
-                                <div className="flex flex-col items-center text-center">
-                                    <div className="flex h-24 w-24 items-center justify-center rounded-full bg-[#FACC15] shadow-lg shadow-[#FACC15]/20 group-hover:scale-110 transition-transform duration-300">
-                                        {step.icon}
+                            <div key={index} className="relative group p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:border-white/10 transition-all duration-500 overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-[#FACC15]/5 rounded-bl-full -mr-16 -mt-16 transition-transform duration-500 group-hover:scale-150"></div>
+
+                                <div className="flex flex-col relative z-10">
+                                    <div className="flex items-center justify-between mb-8">
+                                        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#0A192F] border border-white/10 text-[#FACC15] shadow-inner group-hover:scale-110 transition-transform duration-500">
+                                            {step.icon}
+                                        </div>
+                                        <div className="text-4xl font-black text-white/5 select-none transition-colors duration-500 group-hover:text-white/10">
+                                            {step.number}
+                                        </div>
                                     </div>
-                                    <div className="mt-6 flex items-center justify-center w-8 h-8 rounded-full bg-white/10 text-white font-mono text-xs mb-4">
-                                        {step.number}
-                                    </div>
-                                    <h3 className="text-xl font-bold text-white mb-4">{step.title}</h3>
-                                    <p className="text-[#8892B0] leading-relaxed">
+
+                                    <h3 className="text-xl font-bold text-white mb-4 tracking-tight">{step.title}</h3>
+                                    <p className="text-[#8892B0] leading-relaxed text-sm">
                                         {step.description}
                                     </p>
                                 </div>
@@ -76,7 +81,7 @@ const Process = () => {
 
                 <div className="mt-20 text-center">
                     <a
-                        href="#audit"
+                        href="#contact"
                         className="inline-flex items-center justify-center rounded-lg border border-[#FACC15] px-8 py-4 text-base font-bold text-[#FACC15] hover:bg-[#FACC15]/10 hover:shadow-lg hover:shadow-[#FACC15]/20 transition-all duration-200"
                     >
                         Schedule your audit

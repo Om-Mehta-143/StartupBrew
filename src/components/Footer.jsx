@@ -16,19 +16,21 @@ const Footer = () => {
 
                     <nav>
                         <ul className="flex flex-wrap justify-center gap-6 text-sm text-[#8892B0]">
-                            <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
+                            <li><a href="#hero" className="hover:text-white transition-colors">Home</a></li>
                             <li><a href="#process" className="hover:text-white transition-colors">Framework</a></li>
-                            <li><a href="#privacy" className="hover:text-white transition-colors">Privacy</a></li>
-                            <li><a href="#terms" className="hover:text-white transition-colors">Terms</a></li>
+                            <li><a href="#testimonials" className="hover:text-white transition-colors">Survivors</a></li>
+                            <li><a href="mailto:hello@startupbrew.com" className="hover:text-white transition-colors">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-white/10 text-center flex flex-col md:flex-row justify-between items-center text-sm text-[#8892B0]/60">
                     <p>&copy; {new Date().getFullYear()} StartupBrew. All rights reserved.</p>
-                    <a href="mailto:hello@startupbrew.com" className="mt-4 md:mt-0 hover:text-[#FACC15] transition-colors">
-                        hello@startupbrew.com
-                    </a>
+                    <div className="mt-4 md:mt-0">
+                        <a href="mailto:hello@startupbrew.com" className="hover:text-[#FACC15] transition-colors font-semibold text-white">
+                            Apply via Email: hello@startupbrew.com
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

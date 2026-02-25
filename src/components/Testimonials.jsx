@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testimonials = () => {
     return (
-        <section id="testimonials" className="py-24 bg-[#0A192F] border-t border-white/5">
+        <section id="testimonials" className="py-24 bg-[#0A192F] border-t border-white/5 scroll-mt-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-[#FACC15] font-semibold tracking-wide uppercase text-sm mb-3">The Survivors</h2>
@@ -33,7 +33,7 @@ const Testimonials = () => {
                                 "Will your startup be featured here? Apply for a free audit to claim this spot and prove your resilience."
                             </p>
 
-                            <a href="#audit" className="mt-6 text-sm font-semibold text-[#FACC15] hover:text-yellow-400 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <a href="#contact" className="mt-6 text-sm font-semibold text-[#FACC15] hover:text-yellow-400 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 Claim this spot
                                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
